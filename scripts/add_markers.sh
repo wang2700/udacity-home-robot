@@ -5,5 +5,5 @@ sleep 15
 xterm -e " export TURTLEBOT_GAZEBO_MAP_FILE="/home/workspace/catkin_ws/src/maps/map.yaml" && roslaunch turtlebot_gazebo amcl_demo.launch " &
 sleep 15
 xterm -e " rosrun rviz rviz -d "/home/workspace/catkin_ws/src/rvizConfig/navigation.rviz" " &
-sleep 15
+sleep 5
 xterm -e " roslaunch add_markers marker_simulation.launch " &

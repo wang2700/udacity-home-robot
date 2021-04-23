@@ -24,10 +24,10 @@ void checkLocationCallback(const nav_msgs::Odometry::ConstPtr& msg)
             {
                 ROS_INFO("First Goal Reached");
                 fistGoalReached = true;
-                sleep(5);
                 ROS_INFO("Item Picked up");
                 marker.action = visualization_msgs::Marker::DELETE;
                 marker_pub.publish(marker);
+                sleep(5);
             }
             
         }
