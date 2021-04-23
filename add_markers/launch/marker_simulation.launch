@@ -1,0 +1,5 @@
+<launch>
+  <!-- The add_marker node -->
+  <node name="marker_simulation" type="marker_simulation" pkg="add_markers" output="screen">
+  </node>
+</launch>
